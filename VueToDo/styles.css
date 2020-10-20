@@ -84,18 +84,18 @@ li {
     color: white;
     border: none;
     text-decoration: none;
-    padding: 12px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 1.1rem;
 }
 
 .mark-complete {
     background-color:grey;
     color: white;
     border: none;
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
     margin-right: 6px;
-    padding: 12px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 1rem;
 }
 
 .is-completed-button {
