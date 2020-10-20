@@ -26,7 +26,6 @@ const app = Vue.createApp({
         },
         markComplete(todo) {
             todo.isCompleted = ! todo.isCompleted
-            console.log(todo.name, todo.isCompleted, todo.id)
 
             const parsedTodos = JSON.stringify(this.todos)
             localStorage.setItem("todos", parsedTodos)
@@ -38,7 +37,6 @@ const app = Vue.createApp({
         deleteTodo(todo) {
             this.todos.splice(todo, 1)
             this.saveTodos()
-            console.group(todos.count)
         }
     },
 

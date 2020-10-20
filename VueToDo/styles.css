@@ -63,12 +63,14 @@ ul {
 li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style-type: none;
     text-align: left;
+    font-size: 22px;
     width: 80%;
     padding: 1.2rem;
     margin-top: 12px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid grey;
 }
 
 .is-completed {
@@ -82,11 +84,21 @@ li {
     color: white;
     border: none;
     text-decoration: none;
+    padding: 12px;
+    font-size: 16px;
 }
 
 .mark-complete {
-    background-color:green;
+    background-color:grey;
     color: white;
     border: none;
+    text-decoration: line-through;
+    margin-right: 6px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.is-completed-button {
+    background-color: #5bc786;
     text-decoration: none;
 }

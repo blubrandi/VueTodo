@@ -27,7 +27,7 @@
                 <ul>
                 <li :class="todo.isCompleted ? 'is-completed' : '' "
                 v-for="(todo) in todos" 
-                @click="markComplete(todo)">{{ todo.name }} <div><button @click="deleteTodo(todo)" class="delete">X</button></div></li>
+                >{{ todo.name }} <div><button class="mark-complete" :class="todo.isCompleted ? 'is-completed-button' : '' " @click="markComplete(todo)">✓ Completed</button><button @click="deleteTodo(todo)" class="delete">X Delete</button></div></li>
             </ul>
             </div>
         </div>
